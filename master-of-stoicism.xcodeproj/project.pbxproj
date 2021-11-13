@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		5A7D3666273F980E00F80A4A /* master_of_stoicismApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3665273F980E00F80A4A /* master_of_stoicismApp.swift */; };
-		5A7D3668273F980E00F80A4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3667273F980E00F80A4A /* ContentView.swift */; };
+		5A7D3668273F980E00F80A4A /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3667273F980E00F80A4A /* QuotesView.swift */; };
 		5A7D366A273F981000F80A4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D3669273F981000F80A4A /* Assets.xcassets */; };
 		5A7D366D273F981000F80A4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D366C273F981000F80A4A /* Preview Assets.xcassets */; };
+		5A7D3674273F98A400F80A4A /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D3673273F98A400F80A4A /* quotes.json */; };
+		5A7D3677273F999100F80A4A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3676273F999100F80A4A /* Quote.swift */; };
+		5A7D367A273F99F300F80A4A /* QuotesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3679273F99F300F80A4A /* QuotesResponse.swift */; };
+		5A7D3681273F9ADC00F80A4A /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3680273F9ADC00F80A4A /* QuotesViewModel.swift */; };
+		5A7D3684273F9B5700F80A4A /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3683273F9B5700F80A4A /* QuoteService.swift */; };
+		5A7D3686273FA3DB00F80A4A /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3685273FA3DB00F80A4A /* Author.swift */; };
+		5A7D368A273FA74E00F80A4A /* QuoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D3689273FA74E00F80A4A /* QuoteRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A7D3662273F980E00F80A4A /* master-of-stoicism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "master-of-stoicism.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7D3665273F980E00F80A4A /* master_of_stoicismApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = master_of_stoicismApp.swift; sourceTree = "<group>"; };
-		5A7D3667273F980E00F80A4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A7D3667273F980E00F80A4A /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
 		5A7D3669273F981000F80A4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A7D366C273F981000F80A4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A7D3673273F98A400F80A4A /* quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		5A7D3676273F999100F80A4A /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		5A7D3679273F99F300F80A4A /* QuotesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesResponse.swift; sourceTree = "<group>"; };
+		5A7D3680273F9ADC00F80A4A /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
+		5A7D3683273F9B5700F80A4A /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		5A7D3685273FA3DB00F80A4A /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		5A7D3689273FA74E00F80A4A /* QuoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				5A7D3665273F980E00F80A4A /* master_of_stoicismApp.swift */,
-				5A7D3667273F980E00F80A4A /* ContentView.swift */,
+				5A7D3682273F9B3F00F80A4A /* Data */,
+				5A7D367F273F9ACA00F80A4A /* View Model */,
+				5A7D367E273F9AB200F80A4A /* View */,
 				5A7D3669273F981000F80A4A /* Assets.xcassets */,
 				5A7D366B273F981000F80A4A /* Preview Content */,
+				5A7D3673273F98A400F80A4A /* quotes.json */,
 			);
 			path = "master-of-stoicism";
 			sourceTree = "<group>";
@@ -65,6 +82,58 @@
 				5A7D366C273F981000F80A4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A7D3675273F998700F80A4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D3679273F99F300F80A4A /* QuotesResponse.swift */,
+				5A7D3676273F999100F80A4A /* Quote.swift */,
+				5A7D3685273FA3DB00F80A4A /* Author.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A7D367E273F9AB200F80A4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D3687273FA73200F80A4A /* Screens */,
+				5A7D3688273FA73800F80A4A /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A7D367F273F9ACA00F80A4A /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D3680273F9ADC00F80A4A /* QuotesViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		5A7D3682273F9B3F00F80A4A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D3675273F998700F80A4A /* Model */,
+				5A7D3683273F9B5700F80A4A /* QuoteService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5A7D3687273FA73200F80A4A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D3667273F980E00F80A4A /* QuotesView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5A7D3688273FA73800F80A4A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D3689273FA74E00F80A4A /* QuoteRow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +196,7 @@
 			files = (
 				5A7D366D273F981000F80A4A /* Preview Assets.xcassets in Resources */,
 				5A7D366A273F981000F80A4A /* Assets.xcassets in Resources */,
+				5A7D3674273F98A400F80A4A /* quotes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A7D3668273F980E00F80A4A /* ContentView.swift in Sources */,
+				5A7D367A273F99F300F80A4A /* QuotesResponse.swift in Sources */,
+				5A7D3668273F980E00F80A4A /* QuotesView.swift in Sources */,
+				5A7D3677273F999100F80A4A /* Quote.swift in Sources */,
+				5A7D3681273F9ADC00F80A4A /* QuotesViewModel.swift in Sources */,
+				5A7D3684273F9B5700F80A4A /* QuoteService.swift in Sources */,
+				5A7D3686273FA3DB00F80A4A /* Author.swift in Sources */,
 				5A7D3666273F980E00F80A4A /* master_of_stoicismApp.swift in Sources */,
+				5A7D368A273FA74E00F80A4A /* QuoteRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

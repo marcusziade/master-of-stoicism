@@ -11,7 +11,7 @@ import SwiftUI
 struct master_of_stoicismApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QuotesView(model: QuotesViewModel())
         }
     }
 }
